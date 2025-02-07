@@ -17,7 +17,7 @@ flowchart TD
     F[Extract Paper Details: Title, Authors, Abstract, PDF Link, Summary]
     G[Display Results: Markdown & Marquee Teleprompters]
     H[Audio Generation: Create WAV files via selected Edge TTS voice]
-    I[Timing Control: Enforce 15 sec per paper (Total = 5 min)]
+    I[Timing Control: Enforce 15 sec per paper (Total 5 min)]
     J[Asset Logging: Generate CSV Dataset (metadata + audio asset links)]
     K[Pre-Recording Interface: Prepare 5-Minute Video Session]
     L[Video Recording: User Reads Request & Abbreviated Summaries]
