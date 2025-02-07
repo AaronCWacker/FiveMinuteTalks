@@ -3166,4 +3166,52 @@ Note that this is a basic example, and you may need to integrate more advanced t
 Total Elapsed: 39.74 s
 ```
 
+# Lets add the features we need for presentation optimization to 5 minutes speaking videos.
+
+the markdown that is saved and sidebar can be improved by featuring the word count, the title + high info words list summary, the different variables on word count for title and summary, and then also give the pdf link, you can replace the string abs for abstract in the url to get the pdf.  add that link next to the other link beside title in markdown saved.  Also add a new output at the end and auto generate the TTF read aloud with it with just the title list, the word list (up to 15 comma seperated single or double word terms in order that match main words within summary (high rouge score), the rouge score, and then a mermaid graph code block for the 15 concepts as a mermaid graph.  Add these to the markdown output per paper.  Thanks!  Show full code listing.  Use emojis and comments labeling this the 5 minute research paper feature so I can easily see the code you added.  Happy coding!
+
+# Also on the Research Evaluator, lets add a new problem
+
+how can I match my voice character agent selector with the ability to write character sheets for each one I have nine different voices there's five female voices and four male voices but I'd like to do is I'd like to optimize that for 10 different sets of read alouds and what I would like to do is actually have the very first one be just an introduction so effectively it would be one slide with introduction with the character sheets and then nine different read-alouds each using a different voice\n
+
+
+Claude's reply 🧠:
+
+To match your voice character agent selector with the ability to write character sheets for each voice, and optimize it for 10 different sets of read-alouds, including an introduction, you can follow these steps:
+
+Create Character Sheets:
+
+For each of the nine different voices (five female and four male), create a character sheet that includes details about the voice, such as name, description, personality traits, and any other relevant information.
+You can use a spreadsheet or a word processing document to create and maintain these character sheets.
+Set up Voice Selection:
+
+Create a dropdown or a selection menu in your presentation software that allows you to choose from the nine different voices.
+Link each voice option to the corresponding character sheet, so that when a voice is selected, the relevant character sheet is displayed.
+Prepare Read-Alouds:
+
+Organize your read-aloud content into nine separate sections or slides, one for each voice.
+Ensure that each read-aloud section is appropriately linked to the corresponding voice selection in your presentation.
+Create Introduction:
+
+Prepare a separate slide or section for the introduction.
+This introduction can provide an overview of the presentation, explain the concept of character voices, and set the context for the read-alouds.
+Presentation Structure:
+
+Structure your presentation in the following order:
+Introduction slide
+Character sheet display (linked to the voice selection)
+Read-aloud section 1 (linked to voice 1)
+Read-aloud section 2 (linked to voice 2)
+...
+Read-aloud section 9 (linked to voice 9)
+Transitions and Navigation:
+
+Set up appropriate transitions and navigation between the different sections of your presentation.
+Ensure that the voice selection is easily accessible throughout the presentation, allowing you to switch between voices as needed.
+Testing and Refinement:
+
+Test your presentation thoroughly, ensuring that the voice selection, character sheet display, and read-alouds are functioning correctly.
+Make any necessary adjustments or refinements based on your testing and feedback.
+By following these steps, you can effectively match your voice character agent selector with the ability to write character sheets for each voice, and optimize the presentation for 10 different sets of read-alouds, including an introduction. This approach allows you to seamlessly switch between voices, display relevant character information, and deliver engaging read-alouds tailored to each voice character.
+
 
