@@ -1,7 +1,9 @@
 # FiveMinuteTalks
 Auto Presentation Teleprompter AI For Teaching in Five Minutes
 
-I am working on a ai app.py which I am using to create audio summaries of research papers and discuss what their impact on learning AI can be for training AI and people at once using audio, text, and speech modalities.  The workflow is voice in (spoken) to present a request, then a frontier model answers the question or request initially and inherits some degree of safety and training of the response from this initial request.  With it it then uses both inputs to search an AI embeddings using semantic search RAG ai which answers with selection of the top twenty research papers of the topic at hand.  This is shown in markdown and also marquee displays like singular teleprompters for each paper.  Then the paper link to abstract, the pdf, and the paper title and authors, and the paper summary are read aloud into wav files using a voice the user selected using the edge TTS voices (7).  Lets create a mermaid model for this.  My ideal would be how to create a live 5 minute talk which is perfecctly timed as 15 seconds of read aloud per paper.  Help me with the graph as mermaid model first then I would like to share my code with you and you help me create a csv output for the dataset of assets, we save the assets and then on the interface we prepare the user for recording the five minute video where they read aloud request, each paper summary (abbreviated to match words per minute voice rate) and then crosses the timing finish line at exactly 5 minutes.    Below is a sample of output for our first test together:   
+I am working on a ai app.py which I am using to create audio summaries of research papers and discuss what their impact on learning AI can be for training AI and people at once using audio, text, and speech modalities.  The workflow is voice in (spoken) to present a request, then a frontier model answers the question or request initially and inherits some degree of safety and training of the response from this initial request.  With it it then uses both inputs to search an AI embeddings using semantic search RAG ai which answers with selection of the top twenty research papers of the topic at hand.  This is shown in markdown and also marquee displays like singular teleprompters for each paper.  Then the paper link to abstract, the pdf, and the paper title and authors, and the paper summary are read aloud into wav files using a voice the user selected using the edge TTS voices (7).  Lets create a mermaid model for this.  My ideal would be how to create a live 5 minute talk which is perfectly timed as 15 seconds of read aloud per paper.  Help me with the graph as mermaid model first then I would like to share my code with you and you help me create a csv output for the dataset of assets, we save the assets and then on the interface we prepare the user for recording the five minute video where they read aloud request, each paper summary (abbreviated to match words per minute voice rate) and then crosses the timing finish line at exactly 5 minutes.    
+
+Below is a sample of output for our first test together:   
 
 
 ```mermaid
@@ -35,6 +37,7 @@ flowchart TD
     L --> M
 ```
 
+```markdown
 📄 How to Train Your Agent to Read and Write
 ### 04 Jan 2021 | How to Train Your Agent to Read and Write — Arxiv Link)
 
@@ -193,9 +196,11 @@ Scholarly publications are key to the transfer of knowledge from scholars to oth
 Authors: Fernando Alonso-Fernandez, Josef Bigun
 
 We describe a technical solution implemented at Halmstad University to automatise assessment and reporting of results of paper-based quiz exams. Paper quizzes are affordable and within reach of campus education in classrooms. Offering and taking them is accepted as they cause fewer issues with reliability and democratic access, e.g. a large number of students can take them without a trusted mobile device, internet, or battery. By contrast, correction of the quiz is a considerable obstacle. We suggest mitigating the issue by a novel image processing technique using harmonic spirals that aligns answer sheets in sub-pixel accuracy to read student identity and answers and to email results within minutes, all fully automatically. Using the described method, we carry out regular weekly examinations in two master courses at the mentioned centre without a significant workload increase. The employed solution also enables us to assign a unique identifier to each quiz (e.g. week 1, week 2. . . ) while allowing us to have an individualised quiz for each student. ---------------
+```
 
 Claude's reply 🧠:
 
+```python
 To create a Streamlit app that addresses your request for a 5-minute high-resolution read-aloud and summarizing 20 research papers on assistive devices for speaking, reading, vocalization, and research, I would need access to those 20 research papers. However, since you did not provide the actual papers, I'll create a sample Streamlit app that demonstrates how it could be done.
 
 Here's the app.py file:
@@ -270,5 +275,5 @@ Run the app with streamlit run app.py.
 Please note that this is a basic example, and you may need to modify the code to fit your specific requirements, such as incorporating actual research papers and implementing the summarization logic.
 
 Total Elapsed: 26.76 s
-
+```
 
