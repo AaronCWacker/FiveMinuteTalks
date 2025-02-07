@@ -238,3 +238,35 @@ Run the app with streamlit run app.py.
 Please note that this is a basic example, and you may need to modify the code to fit your specific requirements, such as incorporating actual research papers and implementing the summarization logic.
 
 Total Elapsed: 26.76 s
+
+
+```mermaid
+
+flowchart TD
+    A[User Voice Input: Spoken Request]
+    B[Frontier Model: Generate Initial Safe Answer]
+    C[Combine Inputs: Voice Request + Frontier Answer]
+    D[Semantic Search: Query AI Embeddings via RAG]
+    E[Retrieve Top 20 Research Papers]
+    F[Extract Paper Details: Title, Authors, Abstract, PDF Link, Summary]
+    G[Display Results: Markdown & Marquee Teleprompters]
+    H[Audio Generation: Create WAV files via selected Edge TTS voice]
+    I[Timing Control: Enforce 15 sec per paper (Total = 5 min)]
+    J[Asset Logging: Generate CSV Dataset (metadata + audio asset links)]
+    K[Pre-Recording Interface: Prepare 5-Minute Video Session]
+    L[Video Recording: User Reads Request & Abbreviated Summaries]
+    M[Final Output: Precisely Timed 5-Minute Live Talk]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+```
