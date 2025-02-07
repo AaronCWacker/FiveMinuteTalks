@@ -3,6 +3,38 @@ Auto Presentation Teleprompter AI For Teaching in Five Minutes
 
 I am working on a ai app.py which I am using to create audio summaries of research papers and discuss what their impact on learning AI can be for training AI and people at once using audio, text, and speech modalities.  The workflow is voice in (spoken) to present a request, then a frontier model answers the question or request initially and inherits some degree of safety and training of the response from this initial request.  With it it then uses both inputs to search an AI embeddings using semantic search RAG ai which answers with selection of the top twenty research papers of the topic at hand.  This is shown in markdown and also marquee displays like singular teleprompters for each paper.  Then the paper link to abstract, the pdf, and the paper title and authors, and the paper summary are read aloud into wav files using a voice the user selected using the edge TTS voices (7).  Lets create a mermaid model for this.  My ideal would be how to create a live 5 minute talk which is perfecctly timed as 15 seconds of read aloud per paper.  Help me with the graph as mermaid model first then I would like to share my code with you and you help me create a csv output for the dataset of assets, we save the assets and then on the interface we prepare the user for recording the five minute video where they read aloud request, each paper summary (abbreviated to match words per minute voice rate) and then crosses the timing finish line at exactly 5 minutes.    Below is a sample of output for our first test together:   
 
+
+```mermaid
+
+flowchart TD
+    A[User Voice Input: Spoken Request]
+    B[Frontier Model: Generate Initial Safe Answer]
+    C[Combine Inputs: Voice Request + Frontier Answer]
+    D[Semantic Search: Query AI Embeddings via RAG]
+    E[Retrieve Top 20 Research Papers]
+    F[Extract Paper Details: Title, Authors, Abstract, PDF Link, Summary]
+    G[Display Results: Markdown & Marquee Teleprompters]
+    H[Audio Generation: Create WAV files via selected Edge TTS voice]
+    I[Timing Control: Enforce 15 sec per paper (Total = 5 min)]
+    J[Asset Logging: Generate CSV Dataset (metadata + audio asset links)]
+    K[Pre-Recording Interface: Prepare 5-Minute Video Session]
+    L[Video Recording: User Reads Request & Abbreviated Summaries]
+    M[Final Output: Precisely Timed 5-Minute Live Talk]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+```
+
 📄 How to Train Your Agent to Read and Write
 ### 04 Jan 2021 | How to Train Your Agent to Read and Write — Arxiv Link)
 
@@ -240,33 +272,3 @@ Please note that this is a basic example, and you may need to modify the code to
 Total Elapsed: 26.76 s
 
 
-```mermaid
-
-flowchart TD
-    A[User Voice Input: Spoken Request]
-    B[Frontier Model: Generate Initial Safe Answer]
-    C[Combine Inputs: Voice Request + Frontier Answer]
-    D[Semantic Search: Query AI Embeddings via RAG]
-    E[Retrieve Top 20 Research Papers]
-    F[Extract Paper Details: Title, Authors, Abstract, PDF Link, Summary]
-    G[Display Results: Markdown & Marquee Teleprompters]
-    H[Audio Generation: Create WAV files via selected Edge TTS voice]
-    I[Timing Control: Enforce 15 sec per paper (Total = 5 min)]
-    J[Asset Logging: Generate CSV Dataset (metadata + audio asset links)]
-    K[Pre-Recording Interface: Prepare 5-Minute Video Session]
-    L[Video Recording: User Reads Request & Abbreviated Summaries]
-    M[Final Output: Precisely Timed 5-Minute Live Talk]
-    
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> L
-    L --> M
-```
